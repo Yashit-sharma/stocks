@@ -1,0 +1,62 @@
+
+body{
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+.navbar{
+    color: rgb(132, 132, 255) !important;
+    width: 100vw;
+    /* height: 85px; */
+    /* height: 10vh; */
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    padding: 5px 30px;
+    display: flex;
+    border-bottom: 0.5px solid rgb(132, 132, 255);
+    box-shadow: 0px 0px 10px rgb(132, 132, 255);
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    z-index: 2;
+    position: fixed;
+}
+.navbar :nth-child(n){
+    background-color: transparent;
+}
+.links{
+    /* border: 2px solid springgreen; */
+    display: flex;
+    padding: 18px;
+    gap: 4rem;
+    cursor: pointer;
+}
+.logo--image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.logo--image > a > img{
+    cursor: pointer;
+    height: 65px;
+    width: 90px;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width:600px){
+    .logo--image :nth-child(2){
+        display: none;
+    }
+    .links{
+        padding: 0px ;
+    }
+}

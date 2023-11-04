@@ -1,0 +1,54 @@
+
+
+.stocks--main{
+    position: relative;
+    top: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 10px 30px;
+    margin-left: 30px;
+}
+.card-body :nth-child(n){
+    padding: 5px 0px;
+}
+.card-img-top{
+    padding: 30px;
+    background-color: black;
+    opacity: 0.9;
+    mix-blend-mode:hard-light;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+.ticker--btn{
+    padding: 10px !important;
+    background-color: transparent;
+    border: 1px solid rgb(132, 132, 255);
+    color: rgb(132, 132, 255);
+}
+.ticker--btn:hover{
+    background-color: transparent;
+    color: rgb(132, 132, 255);
+    border: none;
+}
+
+
+@media screen and (max-width:622px){
+    .stocks--main{
+        padding: 10px 20px;
+        margin-left: 0px;
+        top: 16vh;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .card{
+        align-items: center;
+    }
+
+}

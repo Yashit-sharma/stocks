@@ -1,0 +1,35 @@
+
+
+.about--main{
+    position: relative;
+    top: 20vh;       
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.about--text{
+    text-align: justify;
+    width: 80%;
+    font-size: 17px;
+}
+.trade--img > img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+
+@media screen and (max-width:600px){
+    .about--main{
+        top: 16vh;
+    }
+    .trade--img > img{
+        width: 250px;
+        height: 250px;
+    }
+    .about--text{
+        font-size: 15px;
+    }
+}
