@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styles/Stocks.css'
 import { Link } from 'react-router-dom'
-import val from '../Components/Data.js'
+import val from './Data.js'
 export default function Stocks({ticker_Name}) {
   const Data = val;
   const handleClick = (ticker)=>{
